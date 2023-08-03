@@ -1,0 +1,4 @@
+**.d.ts
+/packages/licaige
+dist
+node_modules

@@ -1,0 +1,20 @@
+{
+  "name": "@licaige/components",
+  "version": "1.0.0",
+  "description": "组件存放的位置",
+  "main": "./index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@licaige/utils": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.2"
+  }
+}

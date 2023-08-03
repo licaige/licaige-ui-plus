@@ -1,0 +1,28 @@
+{
+  "name": "licaige",
+  "version": "1.0.7",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "licaige",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "licaige",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/licaige/licaige-ui-plus"
+  },
+  "dependencies": {
+    "@licaige/utils": "^1.0.3"
+  }
+}
