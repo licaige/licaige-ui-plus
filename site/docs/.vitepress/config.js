@@ -1,7 +1,7 @@
 export default {
   title: 'licaige-ui-plus',
-  // base: process.env.NODE_ENV === 'production' ? '/licaige-ui-plus/' : '/',
-  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/licaige-ui-site/' : '/',
+  // base: process.env.NODE_ENV === 'production' ? '/' : '/',
   themeConfig: {
     nav: [{ text: '文档', link: '/guild/introduce' }],
     sidebar: {
@@ -46,6 +46,8 @@ export default {
         }
       ]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/licaige/licaige-ui-plus'}]
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/licaige/licaige-ui-plus' }
+    ]
   }
 };
