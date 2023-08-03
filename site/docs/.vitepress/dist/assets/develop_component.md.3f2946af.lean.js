@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as l}from"./app.47003ad8.js";const i=JSON.parse('{"title":"组件开发","description":"","frontmatter":{},"headers":[],"relativePath":"develop/component.md"}'),p={name:"develop/component.md"},o=l("",13),t=[o];function e(c,r,D,y,F,C){return n(),a("div",null,t)}const u=s(p,[["render",e]]);export{i as __pageData,u as default};
