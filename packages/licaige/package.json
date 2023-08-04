@@ -1,6 +1,6 @@
 {
   "name": "licaige",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": [
