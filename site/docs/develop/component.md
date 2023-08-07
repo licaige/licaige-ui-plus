@@ -25,7 +25,7 @@ button.vue 开发示例
 </template>
 
 <script lang="ts" setup>
-import "./style/index.less";
+import "./style/index.scss";
 import { computed } from "vue";
 //组件命名
 defineOptions({ name: "ea-button" });

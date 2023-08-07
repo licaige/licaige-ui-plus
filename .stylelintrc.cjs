@@ -5,7 +5,7 @@ module.exports = {
   extends: [
     // standard 规则集合
     'stylelint-config-standard',
-    'stylelint-config-recommended-less',
+    'stylelint-config-recommended-scss',
     // 样式属性顺序规则
     'stylelint-config-recess-order',
     // 接入 Prettier 规则
@@ -15,6 +15,7 @@ module.exports = {
   // 配置 rules
   rules: {
     // 开启 Prettier 自动格式化功能
-    'prettier/prettier': true
+    'prettier/prettier': true,
+    "scss/at-if-no-null": null
   }
 };
