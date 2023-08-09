@@ -1,8 +1,9 @@
 import delPath from '../utils/delpath';
 import { series, parallel, src, dest } from 'gulp';
 import { pkgPath, componentPath } from '../utils/paths';
-// import less from 'gulp-less';
-const sass = require('gulp-sass')(require('sass'));
+// sass
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
 import autoprefixer from 'gulp-autoprefixer';
 import run from '../utils/run';
 //删除licaige
@@ -13,15 +14,12 @@ export const removeDist = () => {
 
 //打包样式
 export const buildStyle = () => {
-  return (
-    // src(`${componentPath}/src/**/style/**.less`)
-    src(`${componentPath}/src/**/style/**.scss`)
-      // .pipe(less())
-      .pipe(sass())
-      .pipe(autoprefixer())
-      .pipe(dest(`${pkgPath}/licaige/lib/src`))
-      .pipe(dest(`${pkgPath}/licaige/es/src`))
-  );
+  const sass = gulpSass(dartSass);
+  return src(`${componentPath}/src/**/style/**.scss`)
+    .pipe(sass.sync())
+    .pipe(autoprefixer())
+    .pipe(dest(`${pkgPath}/licaige/lib/src`))
+    .pipe(dest(`${pkgPath}/licaige/es/src`));
 };
 
 //打包组件
